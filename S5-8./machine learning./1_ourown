@@ -1,0 +1,15 @@
+#urowndata
+#load data
+x=[[100],[80],[50]]
+y=["A","B","C"]
+#load model
+from sklearn.linear_model import Perceptron
+m=Perceptron()
+#load data into model
+m.fit(x,y)
+#testing
+op=m.predict([[55]])
+print(op)
+
+
+
